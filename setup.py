@@ -21,9 +21,11 @@ setup(
     package_data={'murray': [
         'theme.conf',
         '*.html',
+        'static/favicon.ico',
         'static/css/*.css',
         'static/js/*.js',
-        'static/font/*.*'
+        'static/js/vendor/*.js',
+        'static/img/*.*'
     ]},
     include_package_data=True,
     # See
@@ -31,7 +33,7 @@ setup(
     #     #distribute-your-theme-as-a-python-package
     entry_points={
         'sphinx_themes': [
-            'path = murray:get_html_theme_path',
+            'path = murray:template_path',
         ],
         'sphinx.html_themes': [
             'murray = murray',

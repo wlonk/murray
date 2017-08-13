@@ -1,7 +1,7 @@
 import os
 
 
-__version__ = '0.1.3'
+__version__ = '0.1.4'
 
 
 def get_html_theme_path():
@@ -13,3 +13,6 @@ def get_html_theme_path():
 def setup(app):
     cur_dir = get_html_theme_path()
     app.add_html_theme('murray', cur_dir)
+
+
+template_path = get_html_theme_path()
