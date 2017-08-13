@@ -19,13 +19,13 @@ setup(
     zip_safe=False,
     packages=['murray'],
     package_data={'murray': [
-        'theme.conf',
-        '*.html',
-        'static/favicon.ico',
-        'static/css/*.css',
-        'static/js/*.js',
-        'static/js/vendor/*.js',
-        'static/img/*.*'
+        'murray/theme.conf',
+        'murray/*.html',
+        'murray/static/favicon.ico',
+        'murray/static/css/*.css',
+        'murray/static/js/*.js',
+        'murray/static/js/vendor/*.js',
+        'murray/static/img/*.*',
     ]},
     include_package_data=True,
     # See
