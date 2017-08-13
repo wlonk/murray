@@ -30,9 +30,12 @@ setup(
     # http://www.sphinx-doc.org/en/stable/theming.html
     #     #distribute-your-theme-as-a-python-package
     entry_points={
+        'sphinx_themes': [
+            'path = murray:get_html_theme_path',
+        ],
         'sphinx.html_themes': [
             'murray = murray',
-        ]
+        ],
     },
     classifiers=[
         'Development Status :: 3 - Alpha',
