@@ -35,7 +35,7 @@ setup(
         ]
     },
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: MIT License',
         'Environment :: Console',
         'Environment :: Web Environment',

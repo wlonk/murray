@@ -1,0 +1,395 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    font-variant: common-ligatures;
+    line-height: 1.4;
+    text-align: justify;
+    hyphens: auto;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+a {
+  color: #222;
+  font-variant: small-caps;
+  text-decoration: none;
+}
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px 'Sorts Mill Goudy', serif;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+a.headerlink {
+  color: #ddd;
+  visibility: hidden;
+}
+
+h1:hover > a.headerlink,
+h2:hover > a.headerlink,
+h3:hover > a.headerlink,
+h4:hover > a.headerlink,
+h5:hover > a.headerlink,
+h6:hover > a.headerlink,
+dt:hover > a.headerlink,
+caption:hover > a.headerlink,
+p.caption:hover > a.headerlink,
+div.code-block-caption:hover > a.headerlink {
+  visibility: visible;
+}
+
+.main-nav {
+  text-align: center;
+}
+
+.next-prev {
+  text-align: center;
+  color: #222;
+}
+
+div.nav {
+  float: left;
+  width: 20em;
+  left: -20em;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0 5px 5px 0;
+  transition: all 0.5s ease-in-out;
+  text-align: left;
+}
+
+div.nav .caption {
+  display: none;
+}
+
+nav > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.toggle {
+  display: block;
+  margin: 0.5em;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hamb{
+  width: 28px;
+  height: 5px;
+  background: #222;
+  margin-bottom: 3px;
+  border-radius: 3px;
+}
+
+#sidebartoggler {
+  display: none; 
+}
+
+#sidebartoggler:checked + div.nav {
+  left: 0px; 
+  transition: all 0.5s ease-in-out;
+}
+
+.figure.align-center {
+  width: 60em;
+  margin-left: -15em;
+  text-align: center;
+}
+
+.figure img {
+  border-radius: 5px 5px 5px 5px;
+}
+
+.topic,
+.admonition {
+  border: 1px solid #999;
+  margin: 1em;
+  padding: 1em;
+  background-color: #eff0f1;
+  border-radius: 0px 0px 5px 5px;
+  clear: both;
+}
+
+.admonition-sidebar,
+.admonition-todo {
+  float: right;
+  width: 15em;
+  margin-right: -5em;
+  clear: both;
+}
+
+.topic-title,
+.admonition-title {
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+a.current {
+  font-style: italic;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .admonition-todo {
+      float: none;
+      width: auto;
+      margin-right: 1em;
+    }
+
+    .figure.align-center {
+      width: auto;
+      margin-left: auto;
+    }
+
+    .figure.align-center img {
+      max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        width: 30em;
+        margin: 0 auto;
+    }
+
+    .main aside {
+        float: right;
+        width: 15em;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
