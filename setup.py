@@ -19,26 +19,26 @@ setup(
     zip_safe=False,
     packages=['murray'],
     package_data={'murray': [
-        'murray/theme.conf',
-        'murray/*.html',
-        'murray/static/favicon.ico',
-        'murray/static/css/*.css',
-        'murray/static/js/*.js',
-        'murray/static/js/vendor/*.js',
-        'murray/static/img/*.*',
+        'theme.conf',
+        '*.html',
+        'static/favicon.ico',
+        'static/css/*.css',
+        'static/js/*.js',
+        'static/js/vendor/*.js',
+        'static/img/*.*',
     ]},
     include_package_data=True,
     # See
     # http://www.sphinx-doc.org/en/stable/theming.html
     #     #distribute-your-theme-as-a-python-package
-    entry_points={
-        'sphinx_themes': [
-            'path = murray:template_path',
-        ],
-        'sphinx.html_themes': [
-            'murray = murray',
-        ],
-    },
+    # entry_points={
+    #     'sphinx_themes': [
+    #         'path = murray:template_path',
+    #     ],
+    #     'sphinx.html_themes': [
+    #         'murray = murray',
+    #     ],
+    # },
     classifiers=[
         'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: MIT License',

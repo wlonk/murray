@@ -1,0 +1,6 @@
+include *.txt
+include LICENSE
+recursive-include murray *.conf
+recursive-include murray *.css
+recursive-include murray *.html
+recursive-include murray *.js
