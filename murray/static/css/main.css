@@ -125,15 +125,15 @@ div.code-block-caption:hover > a.headerlink {
 }
 
 div.nav {
-  float: left;
   width: 20em;
-  left: -20em;
+  left: -21em;
   position: absolute;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 0 5px 5px 0;
   transition: all 0.5s ease-in-out;
   text-align: left;
+  overflow: hidden;
 }
 
 div.nav .caption {
@@ -167,7 +167,7 @@ nav > ul {
 }
 
 #sidebartoggler:checked + div.nav {
-  left: 0px; 
+  left: -1px; 
   transition: all 0.5s ease-in-out;
 }
 
@@ -269,18 +269,6 @@ a.current {
     .main aside {
         float: right;
         width: 15em;
-    }
-}
-
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
     }
 }
 
