@@ -182,6 +182,7 @@ nav > ul {
 }
 
 .topic,
+.sidebar,
 .admonition {
   border: 1px solid #999;
   margin: 1em;
@@ -191,15 +192,22 @@ nav > ul {
   clear: both;
 }
 
-.admonition-sidebar,
-.admonition-todo {
+.sidebar {
   float: right;
   width: 15em;
   margin-right: -5em;
   clear: both;
 }
 
+.admonition-todo {
+  float: left;
+  width: 10em;
+  margin-left: -14em;
+  clear: both;
+}
+
 .topic-title,
+.sidebar-title,
 .admonition-title {
   font-style: italic;
   font-weight: bold;
@@ -208,6 +216,22 @@ nav > ul {
 
 a.current {
   font-style: italic;
+}
+
+#to-do .admonition-todo {
+  float: none;
+  width: auto;
+  margin: auto;
+}
+
+table {
+  border: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr.row-even {
+  background-color: #eff0f1;
 }
 
 /* TODO: Style tables nicely. */

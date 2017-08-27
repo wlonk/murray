@@ -29,13 +29,17 @@
           type="text/css"
           />
     <link rel="stylesheet"
-          href="{{ pathto('_static/css/main.css', 1) }}"
+          href="{{ pathto('_static/' + style, 1) }}"
           type="text/css"
           />
-    <link rel="stylesheet"
-          href="{{ pathto('_static/css/' + style, 1) }}"
-          type="text/css"
-          />
+
+    {% for cssfile in css_files %}
+    <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+    {% endfor %}
+
+    {% for cssfile in extra_css_files %}
+    <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+    {% endfor %}
 
     <script src="{{ pathto('js/vendor/modernizr-2.8.3-respond-1.4.2.min.js', 1) }}">
     </script>
