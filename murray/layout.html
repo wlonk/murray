@@ -79,7 +79,11 @@
     <div class="nav-wrapper">
 
       <div class="main-nav">
-        <h1>{{ project }}</h1>
+        <h1>
+          <a href="{{ pathto("index") }}">
+            {{ project }}
+          </a>
+        </h1>
         <div class="next-prev">
           {%- if prev %}
           <a title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}">{{ prev.title|striptags|e }}</a>
