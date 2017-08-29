@@ -127,13 +127,17 @@ div.code-block-caption:hover > a.headerlink {
 div.nav {
   width: 20em;
   left: -21em;
-  position: absolute;
+  position: fixed;
+  top: 50px;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 0 5px 5px 0;
   transition: all 0.5s ease-in-out;
   text-align: left;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 90vh;
+  box-shadow: 2px 2px 5px #555;
 }
 
 div.nav .caption {
@@ -149,17 +153,39 @@ nav > ul {
   display: block;
   margin: 0.5em;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 }
 
-.hamb {
-  width: 28px;
-  height: 5px;
-  background: #222;
-  margin-bottom: 3px;
-  border-radius: 3px;
+.ribbon {
+  padding: 0 0 10px 0;
+  position: fixed;
+  left: 0.5em;
+  top: 0em;
+  width: 26px;
+}
+
+.ribbon div {
+  background: #333;
+  background: linear-gradient(#555 0%, #333 100%);
+  color: #fff;
+  padding: 0.5em 0;
+  text-align: center;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+  height: 1em;
+}
+
+.ribbon div:after {
+  border-left: 13px solid #333;
+  border-right: 13px solid #333;
+  border-bottom: 10px solid transparent;
+  bottom: 0;
+  content: '';
+  height: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
 }
 
 #sidebartoggler {
