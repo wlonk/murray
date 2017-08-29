@@ -234,7 +234,17 @@ tr.row-even {
   background-color: #eff0f1;
 }
 
-/* TODO: Style tables nicely. */
+/* TODO: Improve table styles. */
+/* TODO: Change section # link to §, float into left margin. */
+
+hr:after {
+  content: "❦";
+  text-align: center;
+  position: relative;
+  top: -0.7em;
+  display: block;
+  background-color: #ffffff;
+}
 
 /* ==========================================================================
    Media Queries
@@ -256,7 +266,7 @@ tr.row-even {
     .admonition-todo {
       float: none;
       width: auto;
-      margin-right: 1em;
+      margin: auto;
     }
 
     .figure.align-center {
