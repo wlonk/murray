@@ -292,31 +292,46 @@ a.headerlink {
 
 @media only screen and (min-width: 480px) {
 
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
+  /* ========================
+  INTERMEDIATE: IE Fixes
+  ======================== */
 
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
+  .oldie nav a {
+    margin: 0 0.7%;
+  }
 
 }
 
 @media only screen and (max-width: 768px) {
-    .admonition-todo {
-      float: none;
-      width: auto;
-      margin: auto;
-    }
+  .sidebar,
+  .admonition-todo {
+    float: none;
+    width: auto;
+    margin: auto;
+  }
 
-    .figure.align-center {
-      width: auto;
-      margin-left: auto;
-    }
+  .figure.align-center {
+    width: auto;
+    margin-left: auto;
+  }
 
-    .figure.align-center img {
-      max-width: 100%;
-    }
+  .figure.align-center img {
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-left: auto;
+  }
+
+  a.headerlink {
+    float: none;
+    margin-left: 0.5em;
+  }
 }
 
 @media only screen and (min-width: 768px) {
