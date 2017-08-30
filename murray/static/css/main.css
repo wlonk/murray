@@ -261,7 +261,6 @@ tr.row-even {
 }
 
 /* TODO: Improve table styles. */
-/* TODO: Change section # link to §, float into left margin. */
 
 hr:after {
   content: "❦";
@@ -270,6 +269,21 @@ hr:after {
   top: -0.7em;
   display: block;
   background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-left: -1em;
+}
+
+a.headerlink {
+  float: left;
+  display: inline-block;
+  width: 1em;
 }
 
 /* ==========================================================================
