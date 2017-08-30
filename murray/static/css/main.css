@@ -260,7 +260,14 @@ tr.row-even {
   background-color: #eff0f1;
 }
 
-/* TODO: Improve table styles. */
+td,
+th {
+  border: none;
+}
+
+th {
+  border-bottom: 1px solid #333;
+}
 
 hr:after {
   content: "❦";
