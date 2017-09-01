@@ -194,7 +194,6 @@ nav > ul {
 
 #sidebartoggler:checked + div.nav {
   left: -1px; 
-  transition: all 0.5s ease-in-out;
 }
 
 .figure.align-center {
@@ -343,29 +342,38 @@ a.headerlink {
 
 @media only screen and (min-width: 768px) {
 
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
+  /* ====================
+  WIDE: CSS3 Effects
+  ==================== */
 
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
+  .main aside {
+    -webkit-box-shadow: 0 5px 10px #aaa;
+    -moz-box-shadow: 0 5px 10px #aaa;
+    box-shadow: 0 5px 10px #aaa;
+  }
 
 /* ============
-    WIDE: Main
-   ============ */
+WIDE: Main
+============ */
 
-    .main article {
-        width: 30em;
-        margin: 0 auto;
-    }
+  .main article {
+    width: 30em;
+    margin: 0 auto;
+  }
 
-    .main aside {
-        float: right;
-        width: 15em;
-    }
+  .main aside {
+    float: right;
+    width: 15em;
+  }
+
+  /* TODO */
+  #sidebartoggler:checked + div.nav {
+    left: -21em;
+  }
+
+  #sidebartoggler:not(:checked) + div.nav {
+    left: -1px; 
+  }
 }
 
 /* ==========================================================================
