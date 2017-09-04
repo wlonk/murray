@@ -138,6 +138,7 @@ div.nav {
   overflow-y: scroll;
   max-height: 90vh;
   box-shadow: 2px 2px 5px #555;
+  z-index: 10;
 }
 
 div.nav .caption {
@@ -283,12 +284,13 @@ h3,
 h4,
 h5,
 h6 {
-  margin-left: -1em;
+  position: relative;
 }
 
 a.headerlink {
-  float: left;
   display: inline-block;
+  left: -1em;
+  position: absolute;
   width: 1em;
 }
 
