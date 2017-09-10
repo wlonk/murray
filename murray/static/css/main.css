@@ -21,11 +21,8 @@ html {
 
 hr {
     display: block;
-    height: 1px;
+    height: 1em;
     border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
 }
 
 audio,
@@ -58,6 +55,11 @@ a {
   color: #222;
   font-variant: small-caps;
   text-decoration: none;
+}
+
+/* Just the small-caps links at the top-level of a link UL */
+div > ul > li > a {
+  font-size: 102%;
 }
 
 /* ===== Initializr Styles ==================================================
@@ -98,7 +100,7 @@ body {
    ========================================================================== */
 
 a.headerlink {
-  color: #ddd;
+  color: #eff0f1;
   visibility: hidden;
 }
 
@@ -148,6 +150,10 @@ div.nav .caption {
 nav > ul {
   list-style: none;
   padding-left: 0;
+}
+
+ul ul a {
+  font-variant: none;
 }
 
 .toggle {
@@ -213,7 +219,6 @@ nav > ul {
   border: 1px solid #999;
   margin: 1em;
   padding: 1em;
-  background-color: #eff0f1;
   border-radius: 0px 0px 5px 5px;
   clear: both;
 }
@@ -226,9 +231,9 @@ nav > ul {
 }
 
 .admonition-todo {
-  float: left;
+  float: right;
   width: 10em;
-  margin-left: -14em;
+  margin-right: -14em;
   clear: both;
 }
 
@@ -272,8 +277,6 @@ th {
 hr:after {
   content: "❦";
   text-align: center;
-  position: relative;
-  top: -0.7em;
   display: block;
   background-color: #ffffff;
 }
@@ -309,9 +312,27 @@ input[type="submit"] {
 }
 
 .highlighted::before {
-  content: "☛";
-  color: #ccc;
+  content: "☛ ";
+  color: #555;
 }
+
+.highlighted {
+  text-decoration: underline solid #eff0f1;
+}
+
+.main-nav h1::after {
+  background-image: url('../img/flourish.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 15px;
+  content: "";
+  display: block;
+  height: 15px;
+}
+
+/* TODO:
+ *  - Improve UL bullets
+ */
 
 /* ==========================================================================
    Media Queries
