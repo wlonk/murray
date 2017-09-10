@@ -294,6 +294,25 @@ a.headerlink {
   width: 1em;
 }
 
+form {
+  text-align: center;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+
+input[type="submit"] {
+  font-variant: small-caps;
+  background-color: #eff0f1;
+}
+
+.highlighted::before {
+  content: "☛";
+  color: #ccc;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
