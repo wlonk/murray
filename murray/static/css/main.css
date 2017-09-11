@@ -131,7 +131,7 @@ div.nav {
   left: -21em;
   position: fixed;
   top: 50px;
-  background: #fff;
+  background-color: #fffefa;
   border: 1px solid #ddd;
   border-radius: 0 5px 5px 0;
   transition: all 0.5s ease-in-out;
@@ -215,12 +215,16 @@ ul ul a {
 
 .topic,
 .sidebar,
+.epigraph,
 .admonition {
-  border: 1px solid #999;
-  margin: 1em;
-  padding: 1em;
-  border-radius: 0px 0px 5px 5px;
+  background-color: #fffefa;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
   clear: both;
+  margin: 1em;
+  overflow: hidden;
+  padding: 1em;
+  position: relative;
 }
 
 .sidebar {
@@ -232,8 +236,8 @@ ul ul a {
 
 .admonition-todo {
   float: right;
-  width: 10em;
-  margin-right: -14em;
+  width: 15em;
+  margin-right: -20em;
   clear: both;
 }
 
@@ -252,7 +256,8 @@ a.current {
 #to-do .admonition-todo {
   float: none;
   width: auto;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 table {
@@ -355,7 +360,8 @@ input[type="submit"] {
   .admonition-todo {
     float: none;
     width: auto;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .figure.align-center {
