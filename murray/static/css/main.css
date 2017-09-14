@@ -414,7 +414,6 @@ WIDE: Main
     width: 15em;
   }
 
-  /* TODO */
   #sidebartoggler:checked + div.nav {
     left: -21em;
   }
