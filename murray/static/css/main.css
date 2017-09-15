@@ -1,12 +1,15 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 html {
-    color: #222;
-    font-size: 1em;
-    font-variant: common-ligatures;
-    line-height: 1.4;
-    text-align: justify;
-    hyphens: auto;
+  color: #222;
+  font-size: 1em;
+  font-variant: common-ligatures;
+  line-height: 1.4;
+  text-align: justify;
+  /* These don't have great cross-browser support, but they're optional
+   * enhancements in any case: */
+  hyphens: auto;
+  hanging-punctuation: first;
 }
 
 ::-moz-selection {
