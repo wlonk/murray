@@ -280,7 +280,7 @@ th {
 }
 
 hr:after {
-  content: "❦";
+  content: "\2766";
   text-align: center;
   display: block;
   background-color: #ffffff;
@@ -317,7 +317,7 @@ input[type="submit"] {
 }
 
 .highlighted::before {
-  content: "☛ ";
+  content: "\261B  ";
   color: #555;
 }
 
@@ -335,9 +335,23 @@ input[type="submit"] {
   height: 15px;
 }
 
-/* TODO:
- *  - Improve UL bullets
- */
+article ul,
+ul ul {
+  padding-left: 1.25em;
+}
+
+article ul li,
+ul ul li {
+  list-style: none;
+}
+
+article ul li::before,
+ul ul li::before {
+  content: "\223D";
+  display: inline-block;
+  margin: -.1em .33em 0 0;
+  vertical-align: top;
+}
 
 /* ==========================================================================
    Media Queries
