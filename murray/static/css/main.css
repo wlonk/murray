@@ -350,7 +350,8 @@ ul ul li {
 
 article ul li::before,
 ul ul li::before {
-  content: "\2014";
+  /* Consider also U+2053, SWUNG DASH, here, maybe? */
+  content: "\2053";
   display: inline-block;
   margin: -.1em .33em 0 0;
   vertical-align: top;
