@@ -1,0 +1,127 @@
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{murray}[2018/01/04 v0.1.0 Murray package]
+
+\usepackage{fontspec}
+\usepackage[Latin, MiscellaneousSymbols]{ucharclasses}
+\usepackage{fancyhdr}
+\usepackage{adforn}
+\usepackage{pgfornament}
+\usepackage{titletoc}
+\usepackage{titlesec}
+\usepackage{newfloat}
+
+%%% Basics
+\newfontfamily{\symbolsfont}{Apple Symbols}
+\setmainfont{Hoefler Text}[
+	Mapping=tex-text,
+    ItalicFeatures={Alternate=0,Ligatures={Common,Rare}},
+	Ligatures={Common},
+	Alternate=1,
+	Numbers=OldStyle
+]
+
+\setTransitionTo{MiscellaneousSymbols}{\symbolsfont}
+\setTransitionFrom{MiscellaneousSymbols}{\normalfont}
+
+\RequirePackage[defaultlines=2,all]{nowidow}
+
+%%% Page size and geometry
+\RequirePackage{geometry}
+\geometry{papersize={6in,9in}, layoutsize={5.5in,8.5in}, twoside=true}
+
+%%% Footer styles
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\fancypagestyle{plain}{%
+    \fancyhf{} % clear all header and footer fields
+    \fancyfoot[LE,RO]{\thepage}
+    \renewcommand{\headrulewidth}{0pt}
+}
+\fancypagestyle{normal}{%
+    \fancyhf{} % clear all header and footer fields
+    \fancyfoot[LE,RO]{\thepage}
+    \renewcommand{\headrulewidth}{0pt}
+}
+
+% TODO: lay out text block area.
+
+%%% Paragraph styles
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0em}
+
+% TODO: Chapter initial drop caps. Lettrine?
+
+%%% Title page styles
+
+%%% Table of Contents (ToC) styles
+\titlecontents{chapter}[3em]
+   {}
+   {\contentslabel{3em}}
+   {}
+   {\titlerule*[1pc]{.}\contentspage}
+
+%%% Chapter headings styles
+\titleformat
+{\chapter} % command
+[display] % shape
+{\Large\itshape} % format
+{
+    \centering
+    \thechapter.
+} % label
+{0.5ex} % sep
+{
+    \vspace{1ex}
+    \centering
+} % before-code
+[
+\vspace{-0.5ex}%
+] % after-code
+
+\renewcommand{\thechapter}{\@Roman\c@chapter}
+
+%%% Headings styles
+
+\RequirePackage{titlesec}
+\titleformat{\section}[block]{\Large}{}{0em}{}
+\titleformat{\subsection}[block]{\large}{}{0em}{}
+\titleformat{\subsubsection}[block]{\itshape\large}{}{0em}{}
+\titleformat{\paragraph}[block]{\scshape}{}{0em}{}
+
+%%% Unordered list styles
+\renewcommand{\labelitemi}{\adforn{36}}
+
+%%% Table styles
+
+%%% Image/Figure styles
+
+% TODO: something like this?
+% \DeclareFloatingEnvironment{figure}
+
+%%% Sidebars, topics, todos styles
+\DeclareFloatingEnvironment{sidebar}
+\setlength{\unitlength}{0.8\textwidth}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0em}
+
+\renewenvironment{sphinxShadowBox}
+  {
+    \begin{sidebar}
+    \begin{center}
+        \pgfornament[scale=0.3]{88}
+    \end{center}
+    \setlength{\parindent}{2em}
+  }
+  {
+    \vspace{1ex}
+    \begin{center}
+        \pgfornament[scale=0.3]{88}
+    \end{center}
+    \end{sidebar}
+  }
+
+% End of file
+\endinput
